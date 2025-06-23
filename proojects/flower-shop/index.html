@@ -1,1 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blooms & Petals Flower Shop</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo-container">
+            <img src="https://i.postimg.cc/26LJh7V6/download-12.jpg" alt="Blooms & Petals" class="logo">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search flowers...">
+                <button id="searchBtn"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+        <nav class="main-nav" id="mainNav">
+            <ul>
+                <li><a href="#" class="nav-link active">Home</a></li>
+                <li><a href="#" class="nav-link">Shop</a></li>
+                <li><a href="#" class="nav-link">Arrangements</a></li>
+                <li><a href="#" class="nav-link">Occasions</a></li>
+                <li><a href="#" class="nav-link">About</a></li>
+                <li><a href="#" class="nav-link">Contact</a></li>
+                <li><button id="cartBtn"><i class="fas fa-shopping-cart"></i> <span id="cartCount">0</span></button></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Beautiful Flowers for Every Occasion</h1>
+                <button id="shopNowBtn">Shop Now</button>
+            </div>
+        </section>
+
+        <section class="featured-products">
+            <h2>Our Featured Flowers</h2>
+            <div class="products-grid" id="productsGrid"></div>
+        </section>
+
+        <section class="about-section">
+            <div class="about-content">
+                <h2>About Our Flower Shop</h2>
+                <p>We create floral arrangements that bring joy to every occasion.</p>
+                <button id="learnMoreBtn">Learn More</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul id="quickLinks"></ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <address id="contactInfo"></address>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <form id="newsletterForm">
+                    <input type="email" placeholder="Your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; <span id="currentYear"></span> Blooms & Petals. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="modal" id="productModal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/products.js"></script>
+</body>
+</html>
